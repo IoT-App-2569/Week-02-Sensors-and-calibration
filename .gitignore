@@ -1,7 +1,7 @@
 # ESP-IDF build output
 **/build/**
-/sdkconfig
-/sdkconfig.old
+**/sdkconfig
+**/sdkconfig.old
 
 # CMake cache
 CMakeFiles/
