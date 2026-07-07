@@ -102,6 +102,19 @@ $θ_{max} = 180°$
 
 $$angle=(ADC−180)⋅\frac{180}{3720}
 $$
+--
+
+$$angle= \frac{ADC−ADC_{min}}{ADC_{max}−ADC_{min}}⋅θ_{max}
+$$
+
+$ADC_{min} = 200$
+
+$ADC_{max} = 3110$
+
+$θ_{max} = 180°$
+
+$$angle=(ADC−180)⋅\frac{200}{2910}
+$$
 # **ขั้นตอนที่ 6 แสดงผลมุมแบบเรียลไทม์ (ESP-IDF)**
 
 ```c
