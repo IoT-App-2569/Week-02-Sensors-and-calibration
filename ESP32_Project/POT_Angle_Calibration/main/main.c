@@ -7,9 +7,9 @@
 #define ADC_CHANNEL     ADC1_CHANNEL_6   // GPIO34
 #define ADC_ATTEN       ADC_ATTEN_DB_11
 
-// Calibration constants from Step 4 - update after measuring your own POT
-#define ADC_MIN 180
-#define ADC_MAX 3900
+// Calibration constants measured in Step 4 (0 deg = 211, 180 deg = 2976)
+#define ADC_MIN 211
+#define ADC_MAX 2976
 #define DEG_MAX 180.0f
 
 static float adc_to_angle(int adc)
