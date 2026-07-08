@@ -15,4 +15,4 @@ https://www.youtube.com/watch?v=1xvyq2-oQVo
 |   180   |       3900        |3984                    |
 
 # **ขั้นตอนที่ 6 แสดงผลมุมแบบเรียลไทม์ (ESP-IDF)**
-https://www.youtube.com/shorts/g1b6U9tuKfY
+https://www.youtube.com/shorts/_JE2Nu5PmQI
