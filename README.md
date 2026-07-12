@@ -8,7 +8,7 @@
 การทดสอบเริ่มต้นบอร์ด ESP32 เพื่อทำความเข้าใจการพัฒนาด้วยโครงสร้างของ **ESP-IDF Framework** โดยควบคุมสัญญาณ Output ขา GPIO (GPIO2) เพื่อสั่งการเปิด-ปิด LED บนบอร์ดให้เกิดการกระพริบเป็นจังหวะอย่างถูกต้อง
 
 * **ซอร์สโค้ด:** [main.c](file:///Users/phuwish/IOT%20Subject/Week-02-Sensors-and-calibration/ESP32_Project/LED_Blink/main/main.c)
-* **วิดีโอบันทึกผลการทดลอง:** [ดูการทดลองที่ 1 บน YouTube Shorts](https://youtube.com/shorts/sJsyjtO7W_Q)
+* **วิดีโอบันทึกผลการทดลอง:** [รับชมวิดีโอ](https://youtube.com/shorts/sJsyjtO7W_Q)
 
 ---
 
@@ -20,7 +20,7 @@
   * **ความละเอียดของสัญญาณ:** 12-bit (ให้ค่าสัมบูรณ์ในช่วง 0 – 4095)
   * **ค่า Attenuation:** `ADC_ATTEN_DB_12` (รองรับช่วงแรงดันสูงสุดที่ 0V – 3.3V)
 * **ซอร์สโค้ด:** [main.c](file:///Users/phuwish/IOT%20Subject/Week-02-Sensors-and-calibration/ESP32_Project/POT_ADC_Read/main/main.c)
-* **วิดีโอบันทึกผลการทดลอง:** [ดูการทดลองที่ 2 บน YouTube Shorts](https://youtube.com/shorts/vc_8T5pwhvw)
+* **วิดีโอบันทึกผลการทดลอง:** [รับชมวิดีโอ](https://youtube.com/shorts/vc_8T5pwhvw)
 
 ---
 
@@ -28,7 +28,7 @@
 การนำค่า ADC ที่อ่านได้มาทำการประมวลผลต่อเพื่อวัดมุมองศาการหมุนจริงของ Potentiometer (0° – 180°) โดยการใช้เทคนิคทางซอฟต์แวร์เข้ามาปรับจูนค่าสัญญาณเพื่อแก้ปัญหา **Non-linearity** (ความไม่เป็นเส้นตรงทางกายภาพของตัวอุปกรณ์) 
 
 * **ซอร์สโค้ด:** [main.c](file:///Users/phuwish/IOT%20Subject/Week-02-Sensors-and-calibration/ESP32_Project/POT_Angle_Measure/main/main.c)
-* **วิดีโอบันทึกผลการทดลอง:** [ดูการทดลองที่ 3 บน YouTube Shorts](https://youtube.com/shorts/r8VO6wkyAUE)
+* **วิดีโอบันทึกผลการทดลอง:** [รับชมวิดีโอ](https://youtube.com/shorts/r8VO6wkyAUE)
 
 #### ⚙️ เทคนิคหลักที่เลือกใช้ในการแก้ปัญหา
 | เทคนิคที่ใช้ | วัตถุประสงค์และกลไกการทำงาน |
