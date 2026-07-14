@@ -73,11 +73,11 @@ void app_main(void)
 
 | มุม (°) | ค่า ADC(คาดการณ์) | ค่า ADC ที่อ่านได้ |
 | :-----: | :---------------: | ------------------ |
-|    0    |        180        |                    |
-|   45    |       1100        |                    |
-|   90    |       2100        |                    |
-|   135   |       3000        |                    |
-|   180   |       3900        |                    |
+|    0    |        180        |      211           |
+|   45    |       1100        |      651           |
+|   90    |       2100        |      1488          |
+|   135   |       3000        |      2455          |
+|   180   |       3900        |      2976          |
 
 จากข้อมูลนี้ให้หาค่า
 
@@ -146,3 +146,13 @@ void app_main(void)
 - ตรวจสอบ POT ว่าติดตั้งตรงศูนย์กลางหรือไม่
 - ตรวจสอบ ADC_min / ADC_max
 - พิจารณาใช้ **piecewise calibration**
+
+
+<img width="720" height="316" alt="image" src="https://github.com/user-attachments/assets/587fe8f0-ebe1-4051-bd0c-d5d5869c3432" />
+การวัดครั้งที่ 1
+
+<img width="717" height="320" alt="image" src="https://github.com/user-attachments/assets/eea9408f-c120-4106-8ad8-921627e65074" />
+การวัดครั้งที่ 2
+
+
+https://youtu.be/4YQKpafDiA4
