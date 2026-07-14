@@ -1,48 +1,59 @@
-# ESP-IDF build output
-**/build/**
-/sdkconfig
-/sdkconfig.old
+# ============================================================
+#  .gitignore — Week-02-Sensors-and-calibration (ESP-IDF)
+# ============================================================
 
-# CMake cache
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-install_manifest.txt
+# --- ESP-IDF build output (ทุก sub-project) ---
+**/build/
+**/sdkconfig
+**/sdkconfig.old
+**/sdkconfig.defaults.esp32
 
-# Ninja build files
-.ninja_deps
-.ninja_log
+# --- CMake generated files ---
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/install_manifest.txt
 
-# VSCode
-.vscode/
+# --- Ninja build system ---
+**/.ninja_deps
+**/.ninja_log
 
-# CLion / JetBrains
-.idea/
-
-# Python virtual environment
-venv/
-.env/
-
-# Logs
-*.log
-
-# Generated binaries
+# --- Binary / firmware artifacts ---
 *.bin
 *.elf
 *.map
+*.hex
 
-# ESP-IDF Python tools cache
+# --- ESP-IDF component manager ---
+**/dependencies.lock
+**/managed_components/
+
+# --- Partition table (auto-generated) ---
+**/partition_table/
+
+# --- Flash args (auto-generated) ---
+**/flash_args
+**/flash_project_args
+
+# --- Python / ESP-IDF tools cache ---
 __pycache__/
 *.pyc
+*.pyo
+venv/
+.env/
 
-# Partition table auto-generated
-partition_table/
-
-# ESP-IDF component manager
-dependencies.lock
-managed_components/
-
-# Temporary files
+# --- Logs & temp ---
+*.log
 *.tmp
 *.bak
-/.obsidian
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- JetBrains / CLion ---
+.idea/
+
+# --- Obsidian vault config ---
+.obsidian/
