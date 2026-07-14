@@ -1,18 +1,25 @@
-#include <stdio.h>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "driver/gpio.h"
+#include "driver/adc.h"
+#include "esp_log.h"
 
-#define LED_PIN 2
+#define ADC_MIN 200
+#define ADC_MAX 3110
+#define DEG_MAX 180.0
+
+float adc_to_angle(int adc)
+{
+    return (adc - ADC_MIN) * DEG_MAX / (ADC_MAX - ADC_MIN);
+}
 
 void app_main(void)
 {
-    gpio_set_direction(LED_PIN, GPIO_MODE_OUTPUT);
+    adc1_config_width(ADC_WIDTH_BIT_12);
+    adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11);
 
     while (1) {
-        gpio_set_level(LED_PIN, 1);
-        vTaskDelay(500 / portTICK_PERIOD_MS);
-        gpio_set_level(LED_PIN, 0);
-        vTaskDelay(500 / portTICK_PERIOD_MS);
+        int adc = adc1_get_raw(ADC1_CHANNEL_6);
+        float angle = adc_to_angle(adc);
+
+        printf("ADC = %d  Angle = %.2f deg\n", adc, angle);
+        vTaskDelay(pdMS_TO_TICKS(300));
     }
 }
