@@ -146,3 +146,10 @@ void app_main(void)
 - ตรวจสอบ POT ว่าติดตั้งตรงศูนย์กลางหรือไม่
 - ตรวจสอบ ADC_min / ADC_max
 - พิจารณาใช้ **piecewise calibration**
+
+
+<img width="720" height="316" alt="image" src="https://github.com/user-attachments/assets/587fe8f0-ebe1-4051-bd0c-d5d5869c3432" />
+การวัดครั้งที่ 1
+
+<img width="717" height="320" alt="image" src="https://github.com/user-attachments/assets/eea9408f-c120-4106-8ad8-921627e65074" />
+การวัดครั้งที่ 2
