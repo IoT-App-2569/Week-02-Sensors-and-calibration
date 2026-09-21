@@ -14,4 +14,3 @@
 ** ลิงค์วิดีโอการทดลอง
 https://youtube.com/shorts/-hORW5cjaB4?si=NGRFC-ACbOuf7oDn
 
-คู่นายวิศวะ กำจร และนายวุฒิชัย จันทร์เดชะ
