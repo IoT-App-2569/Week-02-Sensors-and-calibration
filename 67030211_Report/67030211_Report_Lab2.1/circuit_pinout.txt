@@ -1,4 +1,0 @@
-ESP32 DevKit to Potentiometer 10k:
-- ESP32 3V3  <---> POT Pin 1 (VCC)
-- ESP32 GND  <---> POT Pin 3 (GND)
-- ESP32 IO34 <---> POT Pin 2 (Wiper / Output)
