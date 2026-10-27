@@ -22,21 +22,7 @@
 
 ## 2. แผนผังเนื้อหาการเรียนรู้ประจำสัปดาห์ (Lesson Roadmap)
 
-```mermaid
-flowchart LR
-    A["<b>สัปดาห์ที่ 02</b><br> Analog Sensors & Calibration"] --> B["1. พื้นฐานเซนเซอร์อนาล็อก & ทรานสดิวเซอร์<br/>(Physical to Electrical, Voltage Divider, Potentiometer)"]
-    A --> C["2. สถาปัตยกรรม ESP32 ADC & ESP-IDF<br/>(12-bit SAR ADC, Attenuation, driver/adc.h)"]
-    A --> D["3. โครงสร้างโปรเจกต์ ESP-IDF From Scratch<br/>(Root & Main CMakeLists.txt, idf.py Toolchain)"]
-    A --> E["4. ทฤษฎีและการทดลอง Calibration<br/>(Ground Truth Angle, Transfer Function, Linear Mapping)"]
-    A --> F["5. การประเมินความแม่นยำ & Error Forensics<br/>(Offset, Non-linearity, Piecewise Calibration)"]
-
-    C --> G["<b>ESP32 from scratch</b><br> CMakeLists.txt & Build Pipeline"]
-    D --> G
-    B --> H["<b>Lab: POT Angle Calibration</b><br> หน้าปัดกระดาษ & การต่อวงจร GPIO34"]
-    E --> H
-    F --> H
-    H --> I["<b>Real-time Angle Monitor</b><br> คำนวณมุมจริง & วิเคราะห์ค่าความคลาดเคลื่อน"]
-```
+![](Fig_README_2026-10-27T07-58-49_academic.svg)
 
 ---
 
