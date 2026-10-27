@@ -3,16 +3,15 @@
 #include "freertos/task.h"
 #include "driver/adc.h"
 
-#define ADC_MIN     0
-#define ADC_MAX     2730
-#define DEG_MAX     180
+#define ADC_MIN     187
+#define ADC_MAX     2847
+#define DEG_MAX     180.0
 
-int adc_to_angle(int adc)
+float adc_to_angle(int adc)
 {
-    if (adc <= ADC_MIN) return 0;
+    if (adc <= ADC_MIN) return 0.0;
     if (adc >= ADC_MAX) return DEG_MAX;
-    float angle = ((float)(adc - ADC_MIN) * DEG_MAX) / (float)(ADC_MAX - ADC_MIN);
-    return (int)(angle + 0.5f);
+    return (adc - ADC_MIN) * DEG_MAX / (ADC_MAX - ADC_MIN);
 }
 
 void app_main(void)
@@ -22,8 +21,8 @@ void app_main(void)
 
     while (1) {
         int adc = adc1_get_raw(ADC1_CHANNEL_6);
-        int angle = adc_to_angle(adc);
-        printf("ADC = %d  Angle = %d deg\n", adc, angle);
+        float angle = adc_to_angle(adc);
+        printf("ADC = %d  Angle = %.2f deg\n", adc, angle);
         vTaskDelay(pdMS_TO_TICKS(300));
     }
 }
