@@ -28,6 +28,8 @@
   * **ค่า Attenuation:** `ADC_ATTEN_DB_12` (รองรับช่วงแรงดันสูงสุดที่ 0V – 3.3V)
 * **ซอร์สโค้ด:** [main.c](ESP32_Project/POT_ADC_Read/main/main.c)
 * **วิดีโอบันทึกผลการทดลอง:** [รับชมวิดีโอ]()
+* <img width="602" height="387" alt="image" src="https://github.com/user-attachments/assets/a0dc0920-5588-426f-a72c-eb4e249ed928" />
+
 
 ---
 
