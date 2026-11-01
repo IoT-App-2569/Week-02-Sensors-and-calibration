@@ -75,7 +75,7 @@ void app_main(void) {
 1. **Physical Alignment:** แกนหมุน POT ติดตั้งตรงกับจุดศูนย์กลางของหน้าปัดกระดาษหรือไม่
 2. **Boundary Values:** ตรวจสอบและอัปเดตค่า `ADC_MIN` และ `ADC_MAX` ให้อ้างอิงจากฮาร์ดแวร์จริง
 3. **Non-linearity Correction:** หาก ADC ของ ESP32 มีความไม่เป็นเชิงเส้น (Non-linear) ในช่วงแรงดันต่ำหรือสูง ให้เปลี่ยนไปใช้ **Piecewise Calibration** (แยกช่วงคำนวณทีละมุม) แทนสมการเส้นตรงเดียว
-  <img width="1108" height="1477" alt="IMG_9232" src="https://github.com/user-attachments/assets/f0af6b36-2693-4662-a80b-d88837b959bd" />
+
 <img width="455" height="715" alt="IMG_9234" src="https://github.com/user-attachments/assets/3544c185-91c5-4d80-8361-8b9769604557" />
 
 
